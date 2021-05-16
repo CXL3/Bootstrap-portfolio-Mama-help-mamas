@@ -1,9 +1,11 @@
 {
   "name": "bootstrap-portfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "This is a website for ranking baby products with moms' honest reviews.",
+  "main": "home.html",
   "scripts": {
+    "lite":"lite-server",
+    "start":"npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
