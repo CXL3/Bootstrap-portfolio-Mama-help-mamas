@@ -2,17 +2,17 @@
   "name": "bootstrap-portfolio",
   "version": "1.0.0",
   "description": "This is a website for ranking baby products with moms' honest reviews.",
-  "main": "home.html",
+  "main": "index.html",
   "scripts": {
-    "lite":"lite-server",
-    "start":"npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CXL3/Bootstrap-portfolio-Mama-help-mamas.git"
   },
-  "author": "",
+  "author": "Claire Xi Lu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CXL3/Bootstrap-portfolio-Mama-help-mamas/issues"
