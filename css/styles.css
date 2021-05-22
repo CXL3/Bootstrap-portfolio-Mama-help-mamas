@@ -54,3 +54,15 @@ footer {
     background-image: linear-gradient(#f2709c, #ff9472);
     padding: 20px 0;
 }
+.carousel-caption {
+    background-color: rgba(196, 186, 186, 0.5);
+}
+
+.carousel {
+    border: solid #fefeff;
+}
+.carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100; }
