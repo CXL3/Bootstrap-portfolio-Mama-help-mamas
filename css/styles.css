@@ -18,7 +18,7 @@ header h2 {
 }
 
 footer {
-    background-image: linear-gradient(to right, #f2709c, #ff9472););
+    background-image: linear-gradient(to right, #f2709c, #a09e9d);
     padding: 20px 0;
 }
 
@@ -40,3 +40,17 @@ footer {
 .jumbotron {
     margin: 0;
 }    
+.form-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .site-footer{
+    background-image: linear-gradient(#f2709c, #ff9472);
+    padding: 20px 0;
+}
