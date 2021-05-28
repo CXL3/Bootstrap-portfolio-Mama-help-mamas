@@ -13,8 +13,11 @@ h5 {
     color: #080808;
 }
 
-header h2 {
-    color: #CEC8FF;
+header h1 {
+    color:  #0f0e0f;
+}
+header h3 {
+    color:  #181718;
 }
 
 footer {
