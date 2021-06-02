@@ -25,11 +25,69 @@
                     <h3> &emsp; &emsp; &emsp; &emsp; Moms' honest reviews</h3>
                 </div>
                 <div class="col-12 col-md-4 col-xl-2 mt-4">
-                    <a role="button"   href="contactus.html" class="btn btn-warning text-dark btn-lg text-nowrap"  id="recommedIDButtom">What do you recommend?</a>
+                    <a role="button"  class="btn btn-warning text-dark btn-lg text-nowrap" data-toggle="modal" data-target="#feedbackModal">What do you recommend?</a>
                 </div>
             </div>
         </div>
     </header>
+
+    <div id="feedbackModal" class="modal fade" role="dialog">
+        <div class="modal-dialog moddal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">What do you recommend?</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form id="reserveForm">
+
+                            <div class="form-group row">
+                                <label for="productName" class="col-12 col-sm-6 col-form-label">Products</label>
+                                <div class="col">
+                                    <input type="text" class="form-control" id="productName" name="productName" placeholder="Products you like"/>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="likeScale" class="col-12 col-sm-6 col-form-label text-nowrap">How much do you like it?</label>
+                                <div class="col">
+                                    <select name="likeScale" id="likeScale" class="form-control">
+                                        <option value="...">Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="feedbackText" class="col-12 col-form-label">Why do you like it?</label>
+                                <div class="col-12">
+                                    <textarea class="form-control" id="feedbackText" name="feedbackText" rows="3"></textarea>
+                                </div>
+                            </div>
+                          
+                            <div class="form-group row">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
     <nav class="navbar navbar-expand-sm navbar-light sticky-top">
         <div class="container">
             <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#homeNavbar">
@@ -89,8 +147,6 @@
                         <span class="carousel-control-next-icon"></span>
                         <span class="sr-only">Next</span>
                     </a>
-
-                    
                 </div>
             </div>
         </div>
@@ -119,18 +175,22 @@
             </div>
             <div class="col=12 col-sm-6 col-lg-3">
                 <div class="card">
-                    <div class="card-body">
-                        <img class="d-flex center-block img-thumnail" src="img/beds.jpg" alt="beds"/>
-                        <h2 class="text-nowrap text-center">Baby Beds</h2>
-                    </div>
+                    <a href="beds.html">
+                        <div class="card-body">
+                            <img class="d-flex center-block img-thumnail" src="img/beds.jpg" alt="beds"/>
+                            <h2 class="text-nowrap text-center">Baby Beds</h2>
+                        </div>
+                    </a>    
                 </div>             
             </div>
             <div class="col=12 col-sm-6 col-lg-3">
                 <div class="card">
-                    <div class="card-body">
-                        <img class="d-flex center-block img-thumnail" src="img/bath.jpg" alt="bath"/>
-                        <h2 class="text-nowrap text-center">Baby Bath</h2>
-                    </div>
+                    <a href="bath.html">
+                        <div class="card-body">
+                            <img class="d-flex center-block img-thumnail" src="img/bath.jpg" alt="bath"/>
+                            <h2 class="text-nowrap text-center">Baby Bath</h2>
+                        </div>
+                    </a>    
                 </div>  
             </div>
         </div>
@@ -138,34 +198,42 @@
         <div class="row row-content align-items-center">
             <div class="col=12 col-sm-6 col-lg-3">
                 <div class="card">
-                    <div class="card-body">
-                        <img class="d-flex center-block img-thumnail" src="img/clothe.jpg" alt="clothe"/>
-                        <h2 class="text-nowrap text-center">Baby Clothe</h2>
-                    </div>
+                    <a href="clothe.html">
+                        <div class="card-body">
+                            <img class="d-flex center-block img-thumnail" src="img/clothe.jpg" alt="clothe"/>
+                            <h2 class="text-nowrap text-center">Baby Clothe</h2>
+                        </div>
+                    </a>    
                 </div>
             </div>
             <div class="col=12 col-sm-6 col-lg-3">
                 <div class="card">
-                    <div class="card-body">
-                        <img class="d-flex center-block img-thumnail" src="img/food.jpg" alt="food"/>
-                        <h2 class="text-nowrap text-center">Baby food</h2>
-                    </div>
+                    <a href="food.html">
+                        <div class="card-body">
+                            <img class="d-flex center-block img-thumnail" src="img/food.jpg" alt="food"/>
+                            <h2 class="text-nowrap text-center">Baby food</h2>
+                        </div>
+                    </a>    
                 </div>   
             </div>
             <div class="col=12 col-sm-6 col-lg-3">
                 <div class="card">
-                    <div class="card-body">
-                        <img class="d-flex center-block img-thumnail" src="img/toys.jpg" alt="toys"/>
-                        <h2 class="text-nowrap text-center">Baby Toys</h2>
-                    </div>
+                    <a href="toys.html">
+                        <div class="card-body">
+                            <img class="d-flex center-block img-thumnail" src="img/toys.jpg" alt="toys"/>
+                            <h2 class="text-nowrap text-center">Baby Toys</h2>
+                        </div>
+                    </a>    
                 </div>   
             </div>
             <div class="col=12 col-sm-6 col-lg-3">
                 <div class="card">
-                    <div class="card-body">
-                        <img class="d-flex center-block img-thumnail" src="img/teether.jpg" alt="teether"/>
-                        <h2 class="text-nowrap text-center">Baby Teether</h2>
-                    </div>
+                    <a href="teether.html">
+                        <div class="card-body">
+                            <img class="d-flex center-block img-thumnail" src="img/teether.jpg" alt="teether"/>
+                            <h2 class="text-nowrap text-center">Baby Teether</h2>
+                        </div>
+                    </a>    
                 </div>  
             </div>
         </div>
